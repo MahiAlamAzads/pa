@@ -1,0 +1,65 @@
+:root {
+  --text: #b5bcc8;
+  --text-h: #f6f4ef;
+  --bg: #08101b;
+  --line: rgba(255, 255, 255, 0.08);
+  --shadow:
+    rgba(0, 0, 0, 0.24) 0 18px 60px -18px,
+    rgba(0, 0, 0, 0.14) 0 6px 20px -8px;
+  --heading: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
+  --body: 'Trebuchet MS', 'Segoe UI', sans-serif;
+
+  font: 16px/1.5 var(--body);
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(142, 231, 199, 0.16), transparent 36%),
+    radial-gradient(circle at top right, rgba(242, 140, 91, 0.15), transparent 34%),
+    linear-gradient(160deg, #050b14, #08101b 38%, #0f1725 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.025)),
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.03), transparent 48%);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+::selection {
+  background: rgba(247, 211, 106, 0.4);
+  color: #08101b;
+}
